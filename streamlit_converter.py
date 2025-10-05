@@ -8,7 +8,7 @@ import io
 
 st.set_page_config(page_title="Voxel Map Converter", page_icon="🎮")
 
-st.title("🎮 Voxel Map Converter")
+st.title(" Voxel Map Converter")
 st.write("Convert country images to Roblox voxel maps")
 
 # File upload
@@ -20,7 +20,7 @@ uploaded_file = st.file_uploader(
 # Map size slider
 map_size = st.slider("Map Size", min_value=20, max_value=300, value=100)
 
-st.info("ℹ️ Black pixels = Land | White pixels = Water")
+st.info(" Black pixels = Land | White pixels = Water")
 
 if uploaded_file is not None:
     # Display uploaded image
@@ -62,7 +62,7 @@ if uploaded_file is not None:
             output += "}\n"
             
             # Success message
-            st.success(f"✅ Conversion complete! Map size: {width}x{height} | Voxels: {voxel_count:,}")
+            st.success(f" Conversion complete! Map size: {width}x{height} | Voxels: {voxel_count:,}")
             
             # Download button
             st.download_button(
