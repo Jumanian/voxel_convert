@@ -66,7 +66,7 @@ if uploaded_file is not None:
             
             # Download button
             st.download_button(
-                label="📥 Download mapData.txt",
+                label=" Download mapData.txt",
                 data=output,
                 file_name="mapData.txt",
                 mime="text/plain"
@@ -78,7 +78,7 @@ if uploaded_file is not None:
             
             # Instructions
             st.markdown("---")
-            st.markdown("### 📋 Next Steps:")
+            st.markdown("###  Next Steps:")
             st.markdown("""
             1. Download the `mapData.txt` file above
             2. Open Roblox Studio
@@ -88,7 +88,7 @@ if uploaded_file is not None:
             6. Use the Roblox generator script to build your map!
             """)
 else:
-    st.info("👆 Upload an image to get started!")
+    st.info(" Upload an image to get started!")
     
 # Footer
 st.markdown("---")
